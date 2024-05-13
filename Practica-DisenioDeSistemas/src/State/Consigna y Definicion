@@ -1,0 +1,17 @@
+Consigna---------------------------------------------------------
+
+Morty entiende el mensaje hablar(). La forma en la que responde, depende de su humor:
+
+Sí esta de buen humor, se imprime en pantalla: "Todo bien, Rick".
+Sí esta de mal humor, se imprime en pantalla: "Todo mal, Rick".
+Sí esta de pésimo humor, se imprime en pantalla: "&/&%!"#$()/=%?¡k".
+
+Definicion-------------------------------------------------------
+
+El patrón State (Estado) es un patrón de diseño de comportamiento que permite a un objeto alterar su comportamiento
+cuando su estado interno cambia. Este patrón se basa en la encapsulación del comportamiento relacionado con el estado en clases separadas
+y permite que el objeto cambie de una clase a otra conforme cambia su estado.
+
+En Java, el patrón State se implementa utilizando interfaces y clases concretas para representar diferentes estados,
+y una clase de contexto que contiene una referencia a un objeto de estado concreto.
+Cuando el estado interno de la clase de contexto cambia, se cambia la instancia de estado asociada.

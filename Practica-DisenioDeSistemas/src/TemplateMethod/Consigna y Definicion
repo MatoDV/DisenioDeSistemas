@@ -1,0 +1,27 @@
+Consigna--------------------------------------------------------------------
+
+Queremos modelar Cuentas Bancarias.
+
+
+De todas las cuentas bancarias tienen un saldo (que empieza en 0) y un ID único e irrepetible para toda cuenta. Existen dos tipos de cuentas:
+Caja de ahorro y Cuenta Corriente. La única diferencia, radica en que una cuenta corriente permite quedar en números negativos al extraer, por un monto de descubierto,
+distinto para cada cuenta bancaria.
+
+Una cuenta bancaria entiende los mensajes:
+
+- getSaldo() :: Retorna el saldo disponible
+
+- depositar(unaCant) :: Aumenta el saldo en unaCant
+- extraer(unaCant) :: Disminuye el saldo en una cant
+
+Definir utilizando template method donde considere y señalando cual es el template y cual el hook
+
+
+Definicion----------------------------------------------------------------------
+
+El patrón de diseño Template Method es un patrón comportamental que se utiliza en programación orientada a objetos para definir
+el esqueleto de un algoritmo en una clase base y permitir que las subclases sobrescriban ciertos pasos del algoritmo sin cambiar su estructura general.
+
+En Java, el Template Method se implementa mediante una clase abstracta que contiene un método principal (llamado el "método de plantilla")
+que define el flujo de control del algoritmo y utiliza otros métodos (llamados "métodos primitivos" o "métodos hook")
+que pueden ser sobrescritos por las subclases para personalizar el comportamiento.

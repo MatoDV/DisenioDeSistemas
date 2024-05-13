@@ -1,0 +1,18 @@
+Consigna--------------------------
+---------------//EN ESTE CASO HICE OTRO EJEMPLO PORQUE ESTE ES UN QUILOMBO HACERLO//--------------
+
+Por ejemplo, tienes una clase Printer que tiene un método imprimir() para imprimir un documento,
+pero también tienes una clase Computer que tiene un método enviarImpresion(), que envía un documento para imprimir.
+Sin embargo, Printer y Computer no tienen una interfaz común.
+
+Pero ahora necesitas usar la funcionalidad de Printer desde Computer. Aquí es donde usarías un Adapter.
+
+Definicion------------------------
+
+El patrón Adapter es un patrón de diseño estructural que permite que interfaces incompatibles trabajen juntas.
+Se utiliza cuando deseas que un objeto pueda interactuar con otro objeto que tiene una interfaz diferente.
+El Adapter actúa como un puente entre estas interfaces diferentes.
+
+En esencia, el Adapter convierte la interfaz de una clase en otra interfaz que un cliente espera.
+Esto permite que objetos con interfaces incompatibles puedan trabajar juntos. El patrón Adapter se puede implementar de dos maneras:mo
+mediante un Adapter de objeto o un Adapter de clase.

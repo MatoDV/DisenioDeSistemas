@@ -1,0 +1,22 @@
+Consigna--------------------------
+imagina que tienes dos tipos de objetos: Productos y Cajas.
+Una Caja puede contener varios Productos así como cierto número de Cajas más pequeñas.
+Estas Cajas pequeñas también pueden contener algunos Productos o incluso Cajas más pequeñas, y así sucesivamente.
+
+Digamos que decides crear un sistema de pedidos que utiliza estas
+clases. Los pedidos pueden contener productos sencillos sin envolver,
+así como cajas llenas de productos... y otras cajas. ¿Cómo determinarás
+el precio total de ese pedido?
+
+Modelar el escenario propuesto para poder resolver getPrecioTotal(), identificando los roles dentro del patrón.
+
+
+Definicion------------------------
+
+En otras palabras, el patrón Composite permite que los clientes trabajen con estructuras de objetos complejas
+de la misma manera que lo harían con objetos individuales.
+Esto se logra definiendo una interfaz común para todos los componentes de la estructura y proporcionando implementaciones
+tanto para los objetos individuales (hojas) como para las estructuras compuestas (nodos).
+
+En Java, el patrón Composite se implementa utilizando una interfaz o una clase abstracta común para todos los componentes,
+y luego proporcionando clases concretas para los componentes individuales (hojas) y para las estructuras compuestas (nodos).

@@ -1,0 +1,15 @@
+Consigna--------------------------------------------------
+
+Dado el ejemplo de State desarrollado en clase se pide que implementen los cambios sugeridos:
+
+- Morty ya no conoce el humor
+- El evaluador permite agregársele en tiempo de ejecución mas estados
+
+Definicion------------------------------------------------
+
+El término "state dinámico" no se refiere a un patrón de diseño específico como el "State" que mencionamos antes.
+En cambio, se refiere a la capacidad de cambiar dinámicamente el estado de un objeto en tiempo de ejecución,
+lo cual es una característica común en muchos sistemas de programación.
+
+En el contexto de programación, "state dinámico" generalmente implica que un objeto puede cambiar su comportamiento o estado interno durante la ejecución del programa,
+en contraposición a un estado que se define estáticamente en el código y no cambia una vez que se ha inicializado.

@@ -1,0 +1,44 @@
+Consigna---------------------------------------------------------
+
+Se desea modelar como funciona un buscador de Paginas web. Para esto, contamos con una clase Pagina web:
+
+class PaginaWeb{
+    public PaginaWeb(String url, LIst<String> temas, LIst<Articulo> articulos){
+        ...
+    }
+}
+
+
+class Articulo{
+    public Articulo(String titulo, LIst<String> temas, Autor autor, Date fechaPublicacion){
+        ...
+    }
+}
+Se desea implementar un buscador, el cual busca por los siguientes criterios:
+
+Por Autor (nombre parcial o completo)
+Por Fecha de Publicacion (dado una fecha concreta)
+Entre fechas (dado una fecha principio y fin)
+Por temas (parcial o total)
+Por url (parcial o total)
+
+Cada criterio devuelve una Lista de paginas webs. Su solucion debe ser "caps insensitive"
+
+Definicion-------------------------------------------------------
+
+El patrón Strategy es un patrón de diseño de comportamiento que permite definir una familia de algoritmos,
+encapsular cada uno de ellos y hacerlos intercambiables. Esto permite que el algoritmo varíe independientemente de los clientes que lo utilizan.
+
+En el patrón Strategy, hay tres roles principales:
+
+Contexto: Es el objeto que utiliza una estrategia. El contexto mantiene una referencia a una estrategia específica y
+la utiliza para llevar a cabo una operación particular.
+
+Estrategia: Es la interfaz común que define una familia de algoritmos intercambiables. Las clases concretas implementan esta interfaz y
+proporcionan implementaciones específicas de los algoritmos.
+
+Clase concreta de estrategia: Son las implementaciones concretas de la interfaz de estrategia. Cada clase concreta representa un algoritmo específico.
+
+El patrón Strategy se utiliza cuando hay varios algoritmos posibles para realizar una tarea
+y es necesario que estos algoritmos sean intercambiables en tiempo de ejecución.
+También se utiliza cuando hay una variedad de variantes de un algoritmo y se desea poder cambiar entre ellas fácilmente.

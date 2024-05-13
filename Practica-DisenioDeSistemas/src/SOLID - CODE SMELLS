@@ -1,0 +1,62 @@
+---------------------------------------------------------------SOLID---------------------------------------------------------------------------------------------
+
+Claro, SOLID es un acrónimo que representa un conjunto de principios de diseño de software que promueven la escritura de código limpio,
+mantenible y fácil de entender. Estos principios fueron introducidos por Robert C. Martin, también conocido como "Uncle Bob".
+Aquí te explico brevemente cada uno de los principios:
+
+S - Principio de Responsabilidad Única (SRP):
+Este principio establece que una clase debe tener una sola razón para cambiar.
+En otras palabras, una clase debe tener una única responsabilidad y no debe tener más de una razón para cambiar.
+Esto promueve la cohesión y reduce el acoplamiento en el código.
+
+O - Principio de Abierto/Cerrado (OCP):
+Este principio establece que una entidad de software, como una clase, módulo o función,
+debe estar abierta para su extensión pero cerrada para su modificación. En lugar de modificar el código existente,
+se debe poder extender su comportamiento mediante la introducción de nuevas clases o funciones.
+
+L - Principio de Sustitución de Liskov (LSP):
+Este principio establece que los objetos de un programa deberían ser reemplazables por instancias de sus subtipos sin alterar la corrección del programa.
+En otras palabras, una clase derivada debe poder sustituir a su clase base sin cambiar el comportamiento esperado del programa.
+
+I - Principio de Segregación de Interfaces (ISP):
+Este principio establece que ningún cliente debería ser forzado a depender de métodos que no usa.
+En lugar de tener interfaces grandes y monolíticas, se deben tener interfaces más pequeñas y específicas que estén dirigidas a las necesidades de los clientes individuales.
+
+D - Principio de Inversión de Dependencias (DIP):
+Este principio establece que los módulos de alto nivel no deben depender de módulos de bajo nivel, ambos deben depender de abstracciones.
+Además, las abstracciones no deben depender de los detalles, sino que los detalles deben depender de las abstracciones.
+Esto promueve un diseño flexible y extensible mediante la reducción del acoplamiento entre los componentes del sistema.
+
+
+---------------------------------------------------------------CODE SMELLS---------------------------------------------------------------------------------------------
+
+
+Los "code smells" (o "malos olores de código") son características del código fuente que pueden indicar posibles problemas de diseño o implementación.
+A menudo, estos "smells" no son errores en sí mismos, pero pueden indicar áreas del código que podrían beneficiarse de una refactorización
+para mejorar su calidad y mantenibilidad. Aquí hay algunos ejemplos comunes de "code smells":
+
+Long Method (Método Largo):
+Un método que es demasiado largo puede ser difícil de entender y mantener.
+Los métodos largos pueden indicar que están haciendo demasiado y deberían dividirse en métodos más pequeños y específicos.
+
+Large Class (Clase Grande):
+Una clase con demasiadas responsabilidades o con demasiados métodos y campos puede ser difícil de entender y extender.
+Las clases grandes pueden indicar que están violando el principio de responsabilidad única y podrían beneficiarse de la subdivisión en clases más pequeñas y cohesivas.
+
+Duplicate Code (Código Duplicado):
+La duplicación de código es una señal de que la lógica del programa se está repitiendo innecesariamente.
+Esto no solo hace que el código sea más difícil de mantener, sino que también aumenta el riesgo de errores.
+El código duplicado debe ser eliminado mediante la extracción de la lógica compartida en métodos o clases separadas.
+
+Feature Envy (Envidia de Funcionalidad):
+Cuando un método de una clase parece estar más interesado en los datos de otra clase que en sus propios datos, puede ser un signo de "feature envy".
+Esto podría indicar que la funcionalidad debería ser movida a la clase a la que está más relacionada.
+
+Inappropriate Intimacy (Intimidad Inapropiada):
+Cuando dos clases interactúan en exceso o comparten demasiada información, puede ser un signo de "inappropriate intimacy".
+Esto puede hacer que el código sea más frágil y difícil de entender. La información debería ser encapsulada adecuadamente y solo compartida cuando sea necesario.
+
+Comments (Comentarios):
+Si un método o una clase tiene muchos comentarios para explicar su funcionamiento,
+podría ser un signo de que el código no es lo suficientemente claro y expresivo por sí mismo.
+Los comentarios son útiles, pero un exceso de ellos puede indicar que el código necesita ser refactorizado para hacerlo más legible.

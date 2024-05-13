@@ -1,0 +1,27 @@
+Consigna---------------------------------------------------------
+
+Estamos desarrollando un sistema de monitoreo de temperatura para un
+invernadero. El sistema debe ser capaz de registrar la temperatura
+ambiente y notificar a los usuarios cuando la temperatura supera ciertos
+umbrales predefinidos. Se te pide que implementes este sistema
+utilizando el patrón Observer.El sistema debe ser capaz de medir la temperatura ambiente y actualizarla periódicamente.
+Debe permitir a los usuarios establecer umbrales de temperatura mínima y máxima para recibir notificaciones.
+Cuando la temperatura medida excede alguno de los umbrales establecidos, el sistema debe notificar a los usuarios.
+Los usuarios deben poder suscribirse y cancelar la suscripción a las notificaciones de temperatura.
+Instrucciones:Identifica las clases necesarias para implementar el sistema utilizando el patrón Observer.
+Piensa en términos de observables (los objetos que cambian de estado) y observadores (los objetos que desean ser notificados de los cambios).
+iImplementa las clases necesarias y el mecanismo de notificación utilizando el patrón Observer.
+
+Definicion-------------------------------------------------------
+
+El patrón Observer es un patrón de diseño de comportamiento que se utiliza cuando hay una relación de uno a muchos entre objetos,
+de modo que cuando un objeto cambia de estado, todos sus dependientes son notificados y actualizados automáticamente.
+Este patrón se basa en el principio de desacoplar la parte que observa (el observador) de la parte observada (el sujeto).
+
+En el contexto del patrón Observer, hay varios elementos clave:
+
+Sujeto u Observable: Es el objeto que es observado por otros objetos. Mantiene una lista de sus observadores y
+notifica a estos observadores sobre cualquier cambio en su estado.
+
+Observador: Es el objeto que está interesado en los cambios de estado del sujeto.
+Todos los observadores implementan una interfaz común que les permite recibir notificaciones del sujeto.

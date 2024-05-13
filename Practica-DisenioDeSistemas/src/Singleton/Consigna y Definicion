@@ -1,0 +1,21 @@
+Consigna---------------------------------------------------------
+
+Definiremos una clase Logger, que será responsable de registrar los eventos y mensajes importantes en una aplicación.
+Crea una clase llamada Logger getInstance() que devuelva una instancia única de la clase.Dentro de la clase Logger,
+define una variable estática privada para almacenar la única instancia de la clase.Implementa el método getInstance()
+para que devuelva la instancia existente si ya se ha creado, o bien cree una nueva instancia si aún no existe.
+Asegúrate de que la clase Logger no pueda ser instanciada desde fuera de la clase y que la única forma de obtener una instancia
+sea a través del método getInstance().Agrega métodos adicionales a la clase Logger según sea necesario para registrar eventos, mensajes de error, mensajes de información, etc.
+
+Definicion-------------------------------------------------------
+
+El patrón Singleton es un patrón de diseño creacional que se utiliza para garantizar que una clase tenga una sola instancia
+y proporcionar un punto de acceso global a esa instancia. Esto es útil cuando solo se necesita una instancia de una clase en todo el programa.
+
+Constructor privado: El primer paso para implementar el patrón Singleton es hacer que el constructor de la clase sea privado.
+Esto evita que otras clases creen instancias de la clase directamente.
+
+Instancia estática privada: Dentro de la clase, declaramos una variable estática y privada para almacenar la única instancia de la clase.
+
+Método estático para obtener la instancia: Se proporciona un método estático público que devuelve la única instancia de la clase.
+Este método comprueba si la instancia ya ha sido creada. Si no, la instancia se crea y se devuelve.
